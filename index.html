@@ -352,15 +352,6 @@
           item.appendChild(phone);
         }
 
-        // 카카오 장소 검색 응답에는 운영시간·휴무일 필드가 없어서 상세 페이지에서 확인하도록 안내합니다.
-        const hours = document.createElement("div");
-        hours.className = "place-hours";
-        hours.textContent = "이용 시간: 카카오맵 상세정보에서 확인";
-        const holidays = document.createElement("div");
-        holidays.className = "place-hours";
-        holidays.textContent = "휴무일: 카카오맵 상세정보에서 확인";
-        item.append(hours, holidays);
-
         if (place.place_url) {
           const link = document.createElement("a");
           link.className = "place-link";
